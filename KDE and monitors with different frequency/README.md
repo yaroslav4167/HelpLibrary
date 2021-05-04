@@ -11,7 +11,7 @@ __GL_SYNC_DISPLAY_DEVICE=DP-2
  Where `144` - FPS, and `DP-2` - monitorID with the highest frequency. 
  Launch Nvidia X Server settings by typing `nvidia-settings` and then you disable `Allow Flipping` in the OpenGL menu.
 
-# КДЕ и мониторы с разной частотой
+# KDE и мониторы с разной частотой развёртки
  Суть проблемы заключается в том, что при подключении двух и более мониторов - их синхронизация происходит по минимальному из группы.
  Т.е. при подключении 144hz и 60hz мониторов оба будут работать в режиме 60hz
  
