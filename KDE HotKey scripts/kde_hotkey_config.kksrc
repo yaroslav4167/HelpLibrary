@@ -1,0 +1,13 @@
+[Custom Commands][net.local.hasteit.sh.desktop]
+Exec=/home/yaroslavik/Документы/scripts/hasteit.sh
+Name=HasteIt
+
+[Custom Commands][net.local.tempshit.sh.desktop]
+Exec=/home/yaroslavik/Документы/scripts/tempshit.sh
+Name=TempshIt
+
+[net.local.hasteit.sh.desktop][Global Shortcuts]
+_launch=Ctrl+Shift+H
+
+[net.local.tempshit.sh.desktop][Global Shortcuts]
+_launch=Ctrl+Shift+D
