@@ -9,7 +9,9 @@ if ! command -v xclip &> /dev/null && ! command -v xsel &> /dev/null; then
 fi
 
 # Get clipboard content
-if command -v xclip &> /dev/null; then
+if command -v wl-paste &> /dev/null; then
+  CLIPBOARD_CONTENT=$(wl-paste)
+elif command -v xclip &> /dev/null; then
   CLIPBOARD_CONTENT=$(xclip -selection clipboard -o)
 elif command -v xsel &> /dev/null; then
   CLIPBOARD_CONTENT=$(xsel --clipboard --output)
