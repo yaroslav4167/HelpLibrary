@@ -39,7 +39,7 @@ if [ -x "$(command -v notify-send)" ]; then
 # Проверяем, является ли содержимое буфера путем к файлу
 if [[ "$CLIPBOARD_CONTENT" =~ ^file:// ]]; then
   # Удаляем file:// из пути
-  CLEAN_PATH=$(echo "$CLIPBOARD_CONTENT" | sed 's|file://||')
+  CLEAN_PATH=$(echo "$CLIPBOARD_CONTENT" | sed -e 's|file://||' -e 's|\r||g')
   FILE_TO_UPLOAD="$CLEAN_PATH"
   echo $FILE_TO_UPLOAD
 else
